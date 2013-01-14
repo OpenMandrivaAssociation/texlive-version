@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-version
 Version:	2.0
-Release:	2
+Release:	3
 Summary:	Conditionally include text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/version
@@ -52,6 +52,9 @@ cp -fpar tex doc %{buildroot}%{_texmfdistdir}
 
 
 %changelog
+* Mon Jan 14 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.0-3
+- rebuild
+
 * Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
 + Revision: 757419
 - Rebuild to reduce used resources
