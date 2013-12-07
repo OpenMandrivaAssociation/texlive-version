@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-version
 Version:	2.0
-Release:	5
+Release:	6
 Summary:	Conditionally include text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/version
