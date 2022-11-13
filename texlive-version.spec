@@ -1,18 +1,12 @@
-# revision 21920
-# category Package
-# catalog-ctan /macros/latex/contrib/version
-# catalog-date 2011-04-02 15:43:25 +0200
-# catalog-license other-free
-# catalog-version 2.0
 Name:		texlive-version
-Version:	2.0
-Release:	12
+Version:	21920
+Release:	1
 Summary:	Conditionally include text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/version
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/version.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/version.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/version.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/version.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ preferred to version.sty for documents where significant chunks
 of text may be excluded.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,26 +36,10 @@ of text may be excluded.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jan 14 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.0-3
-- rebuild
-
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
-+ Revision: 757419
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
-+ Revision: 719886
-- texlive-version
-- texlive-version
-- texlive-version
-
