@@ -1,6 +1,6 @@
 Name:		texlive-version
 Version:	21920
-Release:	1
+Release:	2
 Summary:	Conditionally include text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/version
