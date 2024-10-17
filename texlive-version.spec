@@ -3,7 +3,7 @@ Version:	21920
 Release:	2
 Summary:	Conditionally include text
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/version
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/version
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/version.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/version.doc.r%{version}.tar.xz
